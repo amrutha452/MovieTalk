@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>
+        movie info
+    </title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+
+    <div class="header">
+        <h1><i class="fa fa-clapperboard" style="padding-right:10px"></i>MOVIE TALK</h1>
+    
+        <i class="fa fa-bars" id="res"></i><br><br>
+        <div class="btn btn2">
+        
+            <button class="qq"  id="qq1" onclick="getN('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=bc8679c384aae9eaa97563221f10e157','1')">POPULAR</button>
+            <button class="qq"  id="qq2" onclick="getN('https://api.themoviedb.org/3/discover/movie?with_genres=35&with_cast=23659&sort_by=revenue.desc&api_key=bc8679c384aae9eaa97563221f10e157','2')">COMEDY</button>
+        
+
+        <button class="qq"  id="qq3" onclick="getN('https://api.themoviedb.org/3/discover/movie?with_genres=878&with_cast=500&sort_by=vote_average.desc&api_key=bc8679c384aae9eaa97563221f10e157','3')">SCI-FI</button>
+        <button class="qq"  id="qq4" onclick="getN('https://api.themoviedb.org/3/discover/movie?with_genres=18&primary_release_year=2022&api_key=bc8679c384aae9eaa97563221f10e157','4')">DRAMA</button>
+        <button class="qq"  id="qq5" onclick="getN('https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=bc8679c384aae9eaa97563221f10e157','5')">KIDS-SHOW</button></div>
+        <div><form id="form">
+            <input type="text" placeholder="search.. " class="search" id="search">
+        </form>
+    </div>
+      
+    </div>
+    
+    <div class="a1" id="a1">
+        <h2>POPULAR MOVIES</h2>
+    </div>
+
+    <main id="main">
+        
+        <div class="movie">
+            <img src="C:\Users\amrut\Pictures\Screenshot_2021-04-07-18-32-02-57.jpg" alt="Image Not Found">
+            <div class="info">
+                <h2>MOVIE TITLE</h2>
+                <span class="red">9.5</span>
+    
+           
+            </div>
+                <div class="overview">
+                    <h3>Overview</h3>
+                    Ammu is a chill going girl.she is active and friendly. Her life moto is Live THe Life U Love Love The life U Live.She recently Joined b tech let see how she faced her carrer turning point
+                    will see achieve her dreams......
+
+                </div>
+        </div>
+        
+    </div>
+   </main>
+
+<script src="javascript.3.js"></script>
+</body>
+
+
+</html>
+
+
+    <!--/discover/movie?with_genres=35&with_cast=23659&sort_by=revenue.desc ..comedy
+                 /discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22...date
+                 /discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc...kid
+                 /discover/movie?with_genres=878&with_cast=500&sort_by=vote_average.desc...sci-fi
+                 /discover/movie?with_genres=18&sort_by=vote_average.desc&vote_count.gte=10..best drama
+            
+            -->
